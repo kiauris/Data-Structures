@@ -1,0 +1,14 @@
+C:\Users\user\RiderProjects\Training\DataStructures\bin\Debug\net8.0\DataStructures.exe
+C:\Users\user\RiderProjects\Training\DataStructures\bin\Debug\net8.0\DataStructures.deps.json
+C:\Users\user\RiderProjects\Training\DataStructures\bin\Debug\net8.0\DataStructures.runtimeconfig.json
+C:\Users\user\RiderProjects\Training\DataStructures\bin\Debug\net8.0\DataStructures.dll
+C:\Users\user\RiderProjects\Training\DataStructures\bin\Debug\net8.0\DataStructures.pdb
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\DataStructures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\DataStructures.AssemblyInfoInputs.cache
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\DataStructures.AssemblyInfo.cs
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\DataStructures.dll
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\refint\DataStructures.dll
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\DataStructures.pdb
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\DataStructures.genruntimeconfig.cache
+C:\Users\user\RiderProjects\Training\DataStructures\obj\Debug\net8.0\ref\DataStructures.dll
