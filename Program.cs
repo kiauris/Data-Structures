@@ -2,7 +2,7 @@
 using DataStructures.StressTest;
 using DataStructures.StressTest.Tests;
 
-public class MainClass
+public class Program
 {
     public  static void RunPresentation()
     {

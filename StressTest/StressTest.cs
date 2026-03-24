@@ -22,7 +22,8 @@ public class StressTest
             new ListTwoWayTester(),
             new CycleListTester(),
             new StackTester(),
-            new QueueTester()
+            new QueueTester(),
+            new SetTester(),
         ];
     }
 
