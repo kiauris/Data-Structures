@@ -1,6 +1,6 @@
 ﻿using DataStructures.DataStructures;
 
-namespace DataStructures.Menu.DataStructureMenu;
+namespace DataStructures.ConsoleUI.DataStructureMenu;
 
 public class CycleListMenu : IDataStructureMenu
 {
@@ -16,7 +16,7 @@ public class CycleListMenu : IDataStructureMenu
     {
         bool running = true;
 
-        var menu = new Menu(
+        var menu = new ConsoleUI.Menu(
             new MenuItem("Push", Push),
             new MenuItem("Pop", Pop),
             new MenuItem("Insert", Insert),

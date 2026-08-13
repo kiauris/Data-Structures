@@ -1,4 +1,4 @@
-﻿using DataStructures.Menu;
+﻿using DataStructures.ConsoleUI;
 using DataStructures.StressTest;
 using DataStructures.StressTest.Tests;
 

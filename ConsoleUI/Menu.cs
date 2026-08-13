@@ -1,4 +1,6 @@
-﻿namespace DataStructures.Menu;
+﻿using DataStructures.Menu;
+
+namespace DataStructures.ConsoleUI;
 
 public class Menu
 {

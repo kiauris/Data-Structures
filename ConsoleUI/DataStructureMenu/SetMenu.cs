@@ -1,6 +1,6 @@
 ﻿using DataStructures.DataStructures;
 
-namespace DataStructures.Menu.DataStructureMenu;
+namespace DataStructures.ConsoleUI.DataStructureMenu;
 
 public class SetMenu : IDataStructureMenu
 {
@@ -20,7 +20,7 @@ public class SetMenu : IDataStructureMenu
     public void Run()
     {
         bool running = true;
-        var menu = new Menu(
+        var menu = new ConsoleUI.Menu(
             new MenuItem("Print", Print),
             new MenuItem("Change set", ChangeSet),
             new MenuItem("Add", Add),

@@ -1,4 +1,4 @@
-﻿namespace DataStructures.Menu;
+﻿namespace DataStructures.ConsoleUI;
 
 public class MenuItem
 {

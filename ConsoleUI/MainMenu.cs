@@ -1,6 +1,6 @@
-﻿using DataStructures.Menu.DataStructureMenu;
+﻿using DataStructures.ConsoleUI.DataStructureMenu;
 
-namespace DataStructures.Menu;
+namespace DataStructures.ConsoleUI;
 
 public class MainMenu
 {

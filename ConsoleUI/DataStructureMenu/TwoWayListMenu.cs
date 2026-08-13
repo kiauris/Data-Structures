@@ -1,25 +1,25 @@
 ﻿using DataStructures.DataStructures;
 
-namespace DataStructures.Menu.DataStructureMenu;
+namespace DataStructures.ConsoleUI.DataStructureMenu;
 
-public class OneWayListMenu : IDataStructureMenu
+public class TwoWayListMenu : IDataStructureMenu
 {
-    public string Title => "One-way List";
+    public string Title => "Two-Way List";
+    private MyListTwoWay _list;
 
-    private MyListOneWay _list;
-    
-    public OneWayListMenu()
+    public TwoWayListMenu()
     {
-        _list = new MyListOneWay();
+        _list = new MyListTwoWay();
     }
-
     public void Run()
     {
         bool running = true;
 
-        var menu = new Menu(
-            new MenuItem("Push", Push),
-            new MenuItem("Pop", Pop),
+        var menu = new ConsoleUI.Menu(
+            new MenuItem("Push front", PushFront),
+            new MenuItem("Push back", PushBack),
+            new MenuItem("Pop front", PopFront),
+            new MenuItem("Pop back", PopBack),
             new MenuItem("Insert", Insert),
             new MenuItem("Delete", Delete),
             new MenuItem("Print", Print),
@@ -29,36 +29,60 @@ public class OneWayListMenu : IDataStructureMenu
             new MenuItem("Clear", Clear),
             new MenuItem("Back", () => running = false)
         );
-
+        
         menu.Run(() => running);
     }
-
+    
     private static void Pause()
     {
         Console.WriteLine("\nPress any key...");
         Console.ReadKey();
     }
-    private void Push()
+
+    private void PushFront()
     {
         Console.Write("Enter new data: ");
         if (int.TryParse(Console.ReadLine(), out int data))
         {
             _list.Print();
-            _list.Push(data);
+            _list.PushFront(data);
             _list.Print();
         }
         else 
             Console.WriteLine("Invalid number");
         Pause();
     }
-    private void Pop()
+
+    private void PushBack()
+    {
+        Console.Write("Enter new data: ");
+        if (int.TryParse(Console.ReadLine(), out int data))
+        {
+            _list.Print();
+            _list.PushBack(data);
+            _list.Print();
+        }
+        else 
+            Console.WriteLine("Invalid number");
+        Pause();
+    }
+
+    private void PopFront()
+    {
+        _list.Print();
+        _list.PopFront();
+        _list.Print();
+        Pause();
+    }
+
+    private void PopBack()
     {
         _list.Print();
         _list.PopBack();
         _list.Print();
         Pause();
     }
-    
+
     private void Insert()
     {
         _list.Print();
@@ -79,7 +103,7 @@ public class OneWayListMenu : IDataStructureMenu
 
         Pause();
     }
-    
+
     private void Delete()
     {
         Console.Write("Enter position: ");
@@ -94,6 +118,12 @@ public class OneWayListMenu : IDataStructureMenu
             Console.WriteLine("Invalid number");
         }
 
+        Pause();
+    }
+
+    private void Print()
+    {
+        _list.Print();
         Pause();
     }
 
@@ -116,7 +146,7 @@ public class OneWayListMenu : IDataStructureMenu
         }
         Pause();
     }
-    
+
     private void SetCapacity()
     {
         Console.Write("Enter new capacity: ");
@@ -133,6 +163,7 @@ public class OneWayListMenu : IDataStructureMenu
 
         Pause();
     }
+    
     private void Contains()
     {
         Console.Write("Enter data to check: ");
@@ -146,11 +177,6 @@ public class OneWayListMenu : IDataStructureMenu
             Console.WriteLine("Invalid number");
         }
 
-        Pause();
-    }
-    private void Print()
-    {
-        _list.Print();
         Pause();
     }
     

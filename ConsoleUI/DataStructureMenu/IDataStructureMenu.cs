@@ -1,4 +1,4 @@
-﻿namespace DataStructures.Menu.DataStructureMenu;
+﻿namespace DataStructures.ConsoleUI.DataStructureMenu;
 
 public interface IDataStructureMenu
 {
